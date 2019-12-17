@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+ padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    background: #ffbc00;
+    color: #f1f1f1;
+}
+.news-headline{
+margin-top: 10px;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    background: #ff6d18;
+    color: honeydew;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 60%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 20%;
+  padding-left: 20px;
+}
+
+/* Right column */
+.rightcolumn1 {
+  float: left;
+  width: 20%;
+  padding-right: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Downloadbtn */
+
+.Downloadbtn{
+padding:5px;
+min-height:200px;
+   background: #ff6d18;
+    color: honeydew;
+}
+
+.download-text{
+color:white;
+text-align:center;
+}
+
+.registernowbtn{
+background-color:pink;
+min-height:70px;
+margin-top:15px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn,.rightcolumn1 {   
+    width: 100%;
+    padding: 0;
+  }
+}
+.column-center{
+ width: 100%;
+ padding: 10px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column  {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column  {
+    width: 100%;
+  }
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h3 style="float:left">Date</h3>
+  <h3 style="text-align:right">SteelGroup Logo</h3>
+</div>
+
+<div class="news-headline">
+  <h3 style="text-align:center">News Headlinne</h3>
+</div>
+
+<div class="row">
+  <div class="rightcolumn1">
+    <div class="card">
+     <a href="linkhere"> <div class="fakeimg" style="height:100px; margin-bottom:8px">Advertise here</div></a>
+	 <a href="linkhere"> <div class="fakeimg" style="height:100px; margin-bottom:8px">Advertise here</div></a>
+     <a href="linkhere"> <div class="fakeimg" style="height:100px; margin-bottom:8px">Advertise here</div></a>
+	 <a href="linkhere"> <div class="fakeimg" style="height:100px; margin-bottom:8px">Advertise here</div></a>
+    </div>
+  </div>
+  
+  
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>NEWS CONTENT</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    
+  </div>
+  
+
+  <div class="rightcolumn">
+    <div class="card">
+     <a href="linkhere"> <div class="fakeimg" style="height:100px; margin-bottom:8px">Advertise here</div></a>
+	 <a href="linkhere"> <div class="fakeimg" style="height:100px; margin-bottom:8px">Advertise here</div></a>
+     <a href="linkhere"> <div class="fakeimg" style="height:100px; margin-bottom:8px">Advertise here</div></a>
+	 <a href="linkhere"> <div class="fakeimg" style="height:100px; margin-bottom:8px">Advertise here</div></a>
+    </div>
+  </div>
+</div>
+
+ 
+ 
+<div class="row">
+<div class="Downloadbtn">
+  <h2 class="download-text">Downloads</h2>
+  <div class="column">
+  <h3 class="download-text">Registration Form</h3>
+ 
+  </div>
+  <div class="column">
+  <h3 class="download-text">Brochure</h3>
+ 
+  </div>
+  <div class="column" >
+  <h3 class="download-text">Layout</h3>
+ 
+  </div>
+  <div class="column" >
+  <h3 class="download-text">Agenda</h3>
+ 
+</div>
+  </div>
+</div>
+
+
+<div class="row">
+<div class="registernowbtn">
+<center>
+  <div class="column-center">
+  <button class="button">Register Now</button>
+ 
+  </div>
+  </center>
+  </div>
+</div>
+
+
+
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
